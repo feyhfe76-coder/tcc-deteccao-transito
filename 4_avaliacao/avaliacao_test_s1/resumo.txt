@@ -1,0 +1,88 @@
+AVALIACAO no conjunto 'test': 1764 imagens, 29823 objetos
+Objetos por tamanho (pixels da imagem original): {'pequenos (<32x32)': 15610, 'medios': 10192, 'grandes (>96x96)': 4021}
+
+=== RT-DETR-L ===
+        Classe  Imagens  Objetos       P       R   mAP50  mAP50-95
+           all     1764    29823   0.736   0.644   0.705     0.446
+           car     1748    19633   0.869   0.734   0.836     0.516
+         truck      649     1021   0.598   0.613   0.641     0.468
+           bus      287      380   0.721   0.613   0.664     0.503
+        person      628     2450   0.765   0.589   0.671     0.352
+  traffic sign     1461     6339   0.725   0.671   0.714     0.391
+
+  Metricas COCO oficiais (pycocotools):
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.447
+   Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.704
+   Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.460
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.205
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.510
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.787
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.249
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.538
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.603
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.428
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.678
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.864
+
+=== YOLO26m ===
+        Classe  Imagens  Objetos       P       R   mAP50  mAP50-95
+           all     1764    29823   0.737   0.595   0.661     0.416
+           car     1748    19633   0.851   0.737   0.807     0.509
+         truck      649     1021   0.636   0.555   0.592     0.430
+           bus      287      380   0.697   0.513   0.594     0.446
+        person      628     2450   0.764   0.560   0.642     0.329
+  traffic sign     1461     6339   0.738   0.612   0.671     0.364
+
+  Metricas COCO oficiais (pycocotools):
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.417
+   Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.660
+   Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.426
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.177
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.479
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.753
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.236
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.511
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.562
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.369
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.638
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.837
+
+=== Faster R-CNN v2 ===
+        Classe  Imagens  Objetos       P       R   mAP50  mAP50-95
+           all     1764    29823   0.705   0.523   0.577     0.340
+           car     1748    19633   0.819   0.668   0.728     0.427
+         truck      649     1021   0.638   0.460   0.529     0.359
+           bus      287      380   0.670   0.439   0.528     0.381
+        person      628     2450   0.719   0.526   0.557     0.264
+  traffic sign     1461     6339   0.681   0.522   0.544     0.271
+
+  Metricas COCO oficiais (pycocotools):
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.342
+   Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.577
+   Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.343
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.118
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.400
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.687
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.210
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.442
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.474
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.272
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.551
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.786
+
+=== Intervalos de confianca de 95% (bootstrap pareado, 200 sorteios) ===
+       RT-DETR-L  mAP50-95: 0.4461  [0.4349; 0.4564]
+       RT-DETR-L     mAP50: 0.7053  [0.6908; 0.7178]
+         YOLO26m  mAP50-95: 0.4157  [0.4039; 0.4273]
+         YOLO26m     mAP50: 0.6611  [0.6474; 0.6750]
+ Faster R-CNN v2  mAP50-95: 0.3404  [0.3304; 0.3503]
+ Faster R-CNN v2     mAP50: 0.5773  [0.5632; 0.5909]
+
+Diferencas entre modelos (A - B):
+  RT-DETR-L - YOLO26m (mAP50-95): +0.0305  [+0.0249; +0.0361]  -> diferenca robusta
+  RT-DETR-L - YOLO26m (mAP50): +0.0442  [+0.0361; +0.0515]  -> diferenca robusta
+  RT-DETR-L - Faster R-CNN v2 (mAP50-95): +0.1057  [+0.0991; +0.1137]  -> diferenca robusta
+  RT-DETR-L - Faster R-CNN v2 (mAP50): +0.1280  [+0.1205; +0.1393]  -> diferenca robusta
+  YOLO26m - Faster R-CNN v2 (mAP50-95): +0.0753  [+0.0696; +0.0837]  -> diferenca robusta
+  YOLO26m - Faster R-CNN v2 (mAP50): +0.0838  [+0.0751; +0.0961]  -> diferenca robusta
+

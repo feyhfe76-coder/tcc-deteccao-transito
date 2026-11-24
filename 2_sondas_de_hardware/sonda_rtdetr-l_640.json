@@ -1,0 +1,32 @@
+[
+  {
+    "lote_pedido": 8,
+    "status": "ok",
+    "lote_usado": 8,
+    "imagens_usadas": 1060,
+    "pico_alocado_MiB": 6358,
+    "pico_reservado_MiB": 7122,
+    "vram_total_MiB": 6140,
+    "no_limite": true,
+    "loss_nan": false,
+    "s_ultima_epoca": 789.2,
+    "s_por_img": 0.7445754716981132,
+    "tempo_total_tentativa_s": 1451.2,
+    "horas_estimadas_treino": 219.3
+  },
+  {
+    "lote_pedido": 4,
+    "status": "ok",
+    "lote_usado": 4,
+    "imagens_usadas": 1060,
+    "pico_alocado_MiB": 3575,
+    "pico_reservado_MiB": 3830,
+    "vram_total_MiB": 6140,
+    "no_limite": false,
+    "loss_nan": false,
+    "s_ultima_epoca": 162.6,
+    "s_por_img": 0.1534254716981132,
+    "tempo_total_tentativa_s": 326.4,
+    "horas_estimadas_treino": 45.2
+  }
+]

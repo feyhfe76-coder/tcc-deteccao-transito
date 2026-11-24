@@ -1,0 +1,4 @@
+Terminado em 2026-10-09 04:21:33
+Melhor epoca: 18
+Tempo das epocas (treino + validacao, todas as sessoes): 6.25 h
+Melhor modelo: C:\tcc\treinos\frcnn_r50v2_640_passos\best.pt

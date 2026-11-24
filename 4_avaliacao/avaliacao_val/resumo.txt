@@ -1,0 +1,72 @@
+AVALIACAO no conjunto 'val': 1872 imagens, 31508 objetos
+Objetos por tamanho (pixels da imagem original): {'pequenos (<32x32)': 16048, 'medios': 11098, 'grandes (>96x96)': 4362}
+
+=== RT-DETR-L ===
+        Classe  Imagens  Objetos       P       R   mAP50  mAP50-95
+           all     1872    31508   0.732   0.632   0.698     0.439
+           car     1850    21057   0.863   0.734   0.833     0.516
+         truck      673     1113   0.635   0.640   0.655     0.473
+           bus      329      426   0.691   0.580   0.656     0.491
+        person      662     2306   0.742   0.556   0.643     0.333
+  traffic sign     1540     6606   0.727   0.650   0.703     0.383
+
+  Metricas COCO oficiais (pycocotools):
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.440
+   Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.696
+   Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.449
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.190
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.505
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.745
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.257
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.539
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.605
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.412
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.676
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.846
+
+=== YOLO26m ===
+        Classe  Imagens  Objetos       P       R   mAP50  mAP50-95
+           all     1872    31508   0.745   0.590   0.656     0.413
+           car     1850    21057   0.841   0.725   0.799     0.506
+         truck      673     1113   0.651   0.568   0.599     0.426
+           bus      329      426   0.744   0.540   0.619     0.470
+        person      662     2306   0.753   0.522   0.607     0.308
+  traffic sign     1540     6606   0.735   0.596   0.656     0.354
+
+  Metricas COCO oficiais (pycocotools):
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.413
+   Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.655
+   Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.422
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.163
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.480
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.706
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.245
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.513
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.564
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.347
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.642
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.809
+
+=== Faster R-CNN v2 ===
+        Classe  Imagens  Objetos       P       R   mAP50  mAP50-95
+           all     1872    31508   0.751   0.503   0.575     0.341
+           car     1850    21057   0.838   0.655   0.724     0.425
+         truck      673     1113   0.676   0.469   0.550     0.368
+           bus      329      426   0.788   0.432   0.540     0.389
+        person      662     2306   0.740   0.466   0.525     0.259
+  traffic sign     1540     6606   0.713   0.491   0.535     0.264
+
+  Metricas COCO oficiais (pycocotools):
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.342
+   Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.574
+   Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.351
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.114
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.391
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.659
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.220
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.447
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.475
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.250
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.547
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.764
+

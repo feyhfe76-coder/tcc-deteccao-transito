@@ -1,0 +1,42 @@
+LATÊNCIA POR IMAGEM | gpu_rtx4050 | 13th Gen Intel(R) Core(TM) i7-13620H | GPU: NVIDIA GeForce RTX 4050 Laptop GPU
+1764 imagens, 3 repetição(ões), lote 1, conf 0,25, imgsz 640, aquecimento 20 | torch 2.14.1+cu126 | ultralytics 8.4.173 | threads 10 | tomada: True
+
+          modelo formato  rep    média  mediana      p95     FPS aloc. MiB        temp
+       RT-DETR-L    FP32    1     46.9     37.9     99.1   21.31       244  38.0->55.0
+       RT-DETR-L    FP16    1     33.0     31.6     41.4   30.26       157  45.0->52.0
+         YOLO26m    FP32    1     16.9     16.3     23.3   59.03       160  45.0->54.0
+         YOLO26m    FP16    1     18.3     17.2     24.2   54.73       113  45.0->49.0
+ Faster R-CNN v2    FP32    1     62.9     62.3     68.6   15.90       421  44.0->61.0
+ Faster R-CNN v2    FP16    1     48.9     49.3     55.4   20.46       404  49.0->60.0
+       RT-DETR-L    FP16    2     34.4     33.1     43.0   29.08       157  49.0->55.0
+         YOLO26m    FP32    2     16.2     14.9     23.3   61.68       160  47.0->56.0
+         YOLO26m    FP16    2     18.3     17.1     24.4   54.73       113  47.0->51.0
+ Faster R-CNN v2    FP32    2     65.3     64.7     72.9   15.32       421  46.0->62.0
+ Faster R-CNN v2    FP16    2     49.3     49.3     56.6   20.30       404  50.0->60.0
+       RT-DETR-L    FP32    2     36.4     36.4     42.0   27.46       244  50.0->61.0
+         YOLO26m    FP32    3     15.5     14.0     22.7   64.60       160  50.0->58.0
+         YOLO26m    FP16    3     19.1     17.9     25.7   52.38       113  48.0->52.0
+ Faster R-CNN v2    FP32    3     64.8     64.2     71.9   15.44       421  46.0->62.0
+ Faster R-CNN v2    FP16    3     49.3     49.4     56.1   20.28       404  50.0->60.0
+       RT-DETR-L    FP32    3     34.3     32.6     42.3   29.19       244  50.0->61.0
+       RT-DETR-L    FP16    3     35.9     33.7     51.2   27.82       157  51.0->56.0
+
+Variação entre repetições (mediana: menor / maior / diferença):
+       RT-DETR-L    FP32: 32.6 / 37.9 / 5.3 ms
+       RT-DETR-L    FP16: 31.6 / 33.7 / 2.1 ms
+         YOLO26m    FP32: 14.0 / 16.3 / 2.3 ms
+         YOLO26m    FP16: 17.1 / 17.9 / 0.8 ms
+ Faster R-CNN v2    FP32: 62.3 / 64.7 / 2.4 ms
+ Faster R-CNN v2    FP16: 49.3 / 49.4 / 0.1 ms
+
+Todas as repetições juntas:
+       RT-DETR-L    FP32: média 39.2 | mediana 35.1 | p95 77.6 | 25.51 FPS
+       RT-DETR-L    FP16: média 34.5 | mediana 32.7 | p95 46.1 | 29.02 FPS
+         YOLO26m    FP32: média 16.2 | mediana 14.9 | p95 23.1 | 61.68 FPS
+         YOLO26m    FP16: média 18.5 | mediana 17.3 | p95 25.1 | 53.92 FPS
+ Faster R-CNN v2    FP32: média 64.3 | mediana 63.8 | p95 71.5 | 15.55 FPS
+ Faster R-CNN v2    FP16: média 49.2 | mediana 49.3 | p95 56.1 | 20.34 FPS
+
+AVISOS:
+nenhum
+throttled no início/fim: None / None

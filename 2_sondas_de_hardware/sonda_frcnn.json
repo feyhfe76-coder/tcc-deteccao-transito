@@ -1,0 +1,26 @@
+[
+  {
+    "arq": "r50",
+    "lote": 8,
+    "parametros_M": 41.3,
+    "status": "ok",
+    "pico_reservado_MiB": 4920,
+    "vram_MiB": 6140,
+    "no_limite": false,
+    "s_img_treino": 0.0538,
+    "s_img_val": 0.0496,
+    "min_por_epoca": 11.1
+  },
+  {
+    "arq": "r50v2",
+    "lote": 8,
+    "parametros_M": 43.3,
+    "status": "ok",
+    "pico_reservado_MiB": 4056,
+    "vram_MiB": 6140,
+    "no_limite": false,
+    "s_img_treino": 0.0715,
+    "s_img_val": 0.0581,
+    "min_por_epoca": 14.4
+  }
+]

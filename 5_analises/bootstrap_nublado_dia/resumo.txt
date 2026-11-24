@@ -1,0 +1,21 @@
+BOOTSTRAP PAREADO | previsoes: avaliacao_nublado_dia | 1677 imagens | 2000 sorteios
+
+Grupos de prefixo (mesmo criterio da divisao treino/validacao): 1316 grupos | imagens por grupo: media 1.27, maximo 6 | grupos com mais de 1 imagem: 263 (624 imagens)
+
+=== Intervalos de confianca de 95% (mAP50-95) ===
+          modelo            por imagem             por grupo    largura grupo/imagem
+       RT-DETR-L   [0.4208; 0.4452]   [0.4213; 0.4451]              0.98x
+         YOLO26m   [0.3989; 0.4241]   [0.3996; 0.4240]              0.97x
+ Faster R-CNN v2   [0.3208; 0.3439]   [0.3205; 0.3438]              1.01x
+
+=== Diferencas entre modelos (A - B), mAP50-95 ===
+                           A - B        modo                  IC95   P(A>B)  conclusao
+             RT-DETR-L - YOLO26m  por imagem   [+0.0144; +0.0279]    1.000  robusta
+             RT-DETR-L - YOLO26m   por grupo   [+0.0145; +0.0283]    1.000  robusta
+     RT-DETR-L - Faster R-CNN v2  por imagem   [+0.0933; +0.1088]    1.000  robusta
+     RT-DETR-L - Faster R-CNN v2   por grupo   [+0.0932; +0.1090]    1.000  robusta
+       YOLO26m - Faster R-CNN v2  por imagem   [+0.0718; +0.0873]    1.000  robusta
+       YOLO26m - Faster R-CNN v2   por grupo   [+0.0723; +0.0873]    1.000  robusta
+
+P(A>B) = fracao dos 2000 sorteios em que A superou B (1,000 = em todos; resolucao de 0.0005).
+Largura grupo/imagem > 1 indica que o sorteio por grupo ampliou a incerteza.

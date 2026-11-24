@@ -1,0 +1,12 @@
+Dataset do TCC gerado em 05/10/2026 20:34
+Origem: C:\bdd100k  |  Destino: C:\bdd_tcc
+Filtro: weather == 'clear' e timeofday == 'daytime'
+Classes: ['car', 'truck', 'bus', 'person', 'traffic sign'] (ids YOLO a partir de 0; ids COCO a partir de 1, na mesma ordem)
+Divisao: teste = validacao oficial filtrada; validacao = 15% do treino oficial filtrado, por grupos de prefixo do nome; semente = 0
+
+train: 10605 imagens (74.5%) | sem objeto: 1 | objetos: {'car': 118448, 'truck': 6308, 'bus': 2305, 'person': 14475, 'traffic sign': 37305} | outras classes descartadas: 25313 | degeneradas: 56
+val: 1872 imagens (13.1%) | sem objeto: 1 | objetos: {'car': 21057, 'truck': 1113, 'bus': 426, 'person': 2306, 'traffic sign': 6606} | outras classes descartadas: 4479 | degeneradas: 11
+test: 1764 imagens (12.4%) | sem objeto: 0 | objetos: {'car': 19633, 'truck': 1021, 'bus': 380, 'person': 2450, 'traffic sign': 6339} | outras classes descartadas: 4281 | degeneradas: 9
+
+Total: 14241 imagens
+Imagens de treino/validacao cujo prefixo tambem aparece no teste: 0

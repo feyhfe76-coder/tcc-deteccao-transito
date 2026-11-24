@@ -1,0 +1,14 @@
+# Versões usadas no notebook (Windows 11, Python 3.11.9), conferidas com "pip freeze".
+# Instale ANTES o PyTorch pelo índice oficial (a versão +cu126 não está no PyPI):
+#   pip install torch==2.14.1 torchvision==0.29.1 --index-url https://download.pytorch.org/whl/cu126
+#   (só CPU / Raspberry Pi 64 bits: --index-url https://download.pytorch.org/whl/cpu)
+# Depois:  pip install -r requirements.txt
+ultralytics==8.4.173
+numpy==2.4.6
+opencv-python==5.0.0.93
+pillow==12.3.0
+matplotlib==3.11.2
+PyYAML==6.0.3
+pandas
+pycocotools==2.0.11
+psutil==7.2.2

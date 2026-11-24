@@ -1,0 +1,7 @@
+distancia_m,video,quadros_usados,trecho_s,fps,resolucao,altura_alvo_px,altura_alvo_na_rede_px,altura_alvo_na_rede_rtdetr_px,taxa_RT-DETR-L,conf_media_RT-DETR-L,taxa_YOLO26m,conf_media_YOLO26m,taxa_Faster R-CNN v2,conf_media_Faster R-CNN v2,altura_esperada_px,desvio_altura_pct
+10.0,pessoa_10m.mp4,165,5.0-13.2,60.0,1080x608,273.5,162.1,287.9,1.0,0.911,1.0,0.872,1.0,0.999,273.5,0.0
+20.0,pessoa_20m.mp4,228,5.0-16.4,60.0,1080x608,142.1,84.2,149.5,1.0,0.902,1.0,0.848,1.0,0.987,136.8,3.9
+30.0,pessoa_30m.mp4,230,5.0-16.5,60.0,1080x608,98.5,58.3,103.6,1.0,0.802,1.0,0.807,1.0,0.974,91.2,8.0
+35.0,pessoa_35m.mp4,219,5.0-15.9,60.0,1080x608,85.6,50.7,90.1,0.936,0.728,1.0,0.675,0.995,0.965,78.1,9.5
+40.0,pessoa_40m.mp4,259,5.0-17.9,60.0,1080x608,72.0,42.7,75.8,0.324,0.589,1.0,0.64,0.784,0.949,68.4,5.3
+45.0,pessoa_45m.mp4,253,5.0-17.6,60.0,1080x608,67.8,40.2,71.3,0.779,0.66,0.941,0.483,0.146,0.876,60.8,11.6

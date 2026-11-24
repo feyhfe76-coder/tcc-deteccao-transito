@@ -1,0 +1,29 @@
+﻿Treino oficial;daytime;night;dawn/dusk;undefined;Total
+clear;12477;22929;2004;2;37412
+overcast;7562;72;1150;0;8784
+undefined;7041;443;528;122;8134
+snowy;2873;2259;437;2;5571
+rainy;2532;2209;329;13;5083
+partly cloudy;4267;49;570;0;4886
+foggy;48;67;15;0;130
+Total;36800;28028;5033;139;70000
+
+Validacao oficial;daytime;night;dawn/dusk;undefined;Total
+clear;1764;3274;307;1;5346
+overcast;1039;18;182;0;1239
+undefined;994;66;64;33;1157
+snowy;422;273;74;0;769
+rainy;396;286;55;1;738
+partly cloudy;638;5;95;0;738
+foggy;5;7;1;0;13
+Total;5258;3929;778;35;10000
+
+Treino + validacao;daytime;night;dawn/dusk;undefined;Total
+clear;14241;26203;2311;3;42758
+overcast;8601;90;1332;0;10023
+undefined;8035;509;592;155;9291
+snowy;3295;2532;511;2;6340
+rainy;2928;2495;384;14;5821
+partly cloudy;4905;54;665;0;5624
+foggy;53;74;16;0;143
+Total;42058;31957;5811;174;80000

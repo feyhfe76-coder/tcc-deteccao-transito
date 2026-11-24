@@ -1,0 +1,11 @@
+LATÊNCIA POR IMAGEM | rpi4 | aarch64 | GPU: None
+200 imagens, 1 repetição(ões), lote 1, conf 0,25, imgsz 640, aquecimento 20 | torch 2.14.1+cpu | ultralytics 8.4.173 | threads 4 | tomada: None
+
+          modelo formato  rep    média  mediana      p95     FPS aloc. MiB        temp
+       RT-DETR-L    FP32    1   6720.8   6706.4   6826.0    0.15      None  34.1->48.2
+         YOLO26m    FP32    1   3169.6   3170.1   3194.2    0.32      None  30.2->47.7
+ Faster R-CNN v2    FP32    1  17454.4  17465.1  17809.6    0.06      None  30.7->50.1
+
+AVISOS:
+nenhum
+throttled no início/fim: 0x0 / 0x0

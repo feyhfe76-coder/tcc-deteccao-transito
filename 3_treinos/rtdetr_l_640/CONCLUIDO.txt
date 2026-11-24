@@ -1,0 +1,4 @@
+Terminado em 2026-10-07 14:31:14
+Ultima epoca executada: 58
+Tempo total somando as sessoes: 16.06 h
+Melhor modelo: C:\tcc\treinos\rtdetr_l_640\weights\best.pt

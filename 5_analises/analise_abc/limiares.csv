@@ -1,0 +1,4 @@
+modelo,limiar_max_F1_val,P_val,R_val,F1_val
+RT-DETR-L,0.5425,0.7318,0.632,0.6768
+YOLO26m,0.3303,0.745,0.5902,0.6573
+Faster R-CNN v2,0.7918,0.7511,0.5025,0.6001

@@ -1,0 +1,4 @@
+Terminado em 2026-10-08 04:15:43
+Ultima epoca executada: 55
+Tempo das epocas (treino + validacao, todas as sessoes): 7.43 h
+Melhor modelo: C:\tcc\treinos\yolo26m_640\weights\best.pt

@@ -1,0 +1,21 @@
+BOOTSTRAP PAREADO | previsoes: avaliacao_chuva_dia | 396 imagens | 2000 sorteios
+
+Grupos de prefixo (mesmo criterio da divisao treino/validacao): 291 grupos | imagens por grupo: media 1.36, maximo 11 | grupos com mais de 1 imagem: 53 (158 imagens)
+
+=== Intervalos de confianca de 95% (mAP50-95) ===
+          modelo            por imagem             por grupo    largura grupo/imagem
+       RT-DETR-L   [0.3990; 0.4448]   [0.3971; 0.4454]              1.06x
+         YOLO26m   [0.3683; 0.4140]   [0.3682; 0.4148]              1.02x
+ Faster R-CNN v2   [0.2994; 0.3417]   [0.2988; 0.3419]              1.02x
+
+=== Diferencas entre modelos (A - B), mAP50-95 ===
+                           A - B        modo                  IC95   P(A>B)  conclusao
+             RT-DETR-L - YOLO26m  por imagem   [+0.0172; +0.0435]    1.000  robusta
+             RT-DETR-L - YOLO26m   por grupo   [+0.0163; +0.0442]    1.000  robusta
+     RT-DETR-L - Faster R-CNN v2  por imagem   [+0.0849; +0.1183]    1.000  robusta
+     RT-DETR-L - Faster R-CNN v2   por grupo   [+0.0848; +0.1163]    1.000  robusta
+       YOLO26m - Faster R-CNN v2  por imagem   [+0.0570; +0.0864]    1.000  robusta
+       YOLO26m - Faster R-CNN v2   por grupo   [+0.0549; +0.0856]    1.000  robusta
+
+P(A>B) = fracao dos 2000 sorteios em que A superou B (1,000 = em todos; resolucao de 0.0005).
+Largura grupo/imagem > 1 indica que o sorteio por grupo ampliou a incerteza.

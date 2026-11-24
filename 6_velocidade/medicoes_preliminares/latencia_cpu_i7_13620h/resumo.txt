@@ -1,0 +1,27 @@
+LATÊNCIA POR IMAGEM | cpu_i7_13620h | 13th Gen Intel(R) Core(TM) i7-13620H | GPU: None
+1764 imagens, 3 repetição(ões), lote 1, conf 0,25, imgsz 640, aquecimento 20 | torch 2.14.1+cu126 | ultralytics 8.4.173 | threads 10 | tomada: True
+
+          modelo formato  rep    média  mediana      p95     FPS aloc. MiB        temp
+       RT-DETR-L    FP32    1    370.0    364.9    405.2    2.70      None  None->None
+         YOLO26m    FP32    1    133.2    131.6    145.4    7.51      None  None->None
+ Faster R-CNN v2    FP32    1   1211.7   1209.0   1251.6    0.83      None  None->None
+         YOLO26m    FP32    2    135.3    133.1    156.1    7.39      None  None->None
+ Faster R-CNN v2    FP32    2   1241.6   1235.7   1310.1    0.81      None  None->None
+       RT-DETR-L    FP32    2    459.8    462.6    492.9    2.17      None  None->None
+ Faster R-CNN v2    FP32    3   1251.4   1250.4   1301.0    0.80      None  None->None
+       RT-DETR-L    FP32    3    469.6    470.6    498.1    2.13      None  None->None
+         YOLO26m    FP32    3    171.4    171.3    191.8    5.84      None  None->None
+
+Variação entre repetições (mediana: menor / maior / diferença):
+       RT-DETR-L    FP32: 364.9 / 470.6 / 105.7 ms
+         YOLO26m    FP32: 131.6 / 171.3 / 39.7 ms
+ Faster R-CNN v2    FP32: 1209.0 / 1250.4 / 41.4 ms
+
+Todas as repetições juntas:
+       RT-DETR-L    FP32: média 433.2 | mediana 452.8 | p95 492.3 | 2.31 FPS
+         YOLO26m    FP32: média 146.6 | mediana 134.8 | p95 184.4 | 6.82 FPS
+ Faster R-CNN v2    FP32: média 1234.9 | mediana 1227.4 | p95 1299.6 | 0.81 FPS
+
+AVISOS:
+nenhum
+throttled no início/fim: None / None

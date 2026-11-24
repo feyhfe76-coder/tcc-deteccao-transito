@@ -1,0 +1,21 @@
+BOOTSTRAP PAREADO | previsoes: avaliacao_noite_limpo | 3274 imagens | 2000 sorteios
+
+Grupos de prefixo (mesmo criterio da divisao treino/validacao): 2021 grupos | imagens por grupo: media 1.62, maximo 17 | grupos com mais de 1 imagem: 635 (1888 imagens)
+
+=== Intervalos de confianca de 95% (mAP50-95) ===
+          modelo            por imagem             por grupo    largura grupo/imagem
+       RT-DETR-L   [0.3368; 0.3663]   [0.3362; 0.3668]              1.04x
+         YOLO26m   [0.2964; 0.3248]   [0.2959; 0.3251]              1.03x
+ Faster R-CNN v2   [0.2308; 0.2577]   [0.2303; 0.2581]              1.03x
+
+=== Diferencas entre modelos (A - B), mAP50-95 ===
+                           A - B        modo                  IC95   P(A>B)  conclusao
+             RT-DETR-L - YOLO26m  por imagem   [+0.0316; +0.0502]    1.000  robusta
+             RT-DETR-L - YOLO26m   por grupo   [+0.0319; +0.0504]    1.000  robusta
+     RT-DETR-L - Faster R-CNN v2  por imagem   [+0.0976; +0.1169]    1.000  robusta
+     RT-DETR-L - Faster R-CNN v2   por grupo   [+0.0974; +0.1168]    1.000  robusta
+       YOLO26m - Faster R-CNN v2  por imagem   [+0.0561; +0.0766]    1.000  robusta
+       YOLO26m - Faster R-CNN v2   por grupo   [+0.0552; +0.0775]    1.000  robusta
+
+P(A>B) = fracao dos 2000 sorteios em que A superou B (1,000 = em todos; resolucao de 0.0005).
+Largura grupo/imagem > 1 indica que o sorteio por grupo ampliou a incerteza.

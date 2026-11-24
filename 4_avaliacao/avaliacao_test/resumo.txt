@@ -1,0 +1,97 @@
+AVALIACAO no conjunto 'test': 1764 imagens, 29823 objetos
+Objetos por tamanho (pixels da imagem original): {'pequenos (<32x32)': 15610, 'medios': 10192, 'grandes (>96x96)': 4021}
+
+=== RT-DETR-L ===
+        Classe  Imagens  Objetos       P       R   mAP50  mAP50-95
+           all     1764    29823   0.736   0.644   0.705     0.446
+           car     1748    19633   0.869   0.734   0.836     0.516
+         truck      649     1021   0.598   0.613   0.641     0.468
+           bus      287      380   0.721   0.613   0.664     0.503
+        person      628     2450   0.765   0.589   0.671     0.352
+  traffic sign     1461     6339   0.725   0.671   0.714     0.391
+
+  Metricas COCO oficiais (pycocotools):
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.447
+   Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.704
+   Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.460
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.205
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.510
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.787
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.249
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.538
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.603
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.428
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.678
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.864
+
+=== YOLO26m ===
+        Classe  Imagens  Objetos       P       R   mAP50  mAP50-95
+           all     1764    29823   0.719   0.594   0.659     0.413
+           car     1748    19633   0.838   0.737   0.803     0.506
+         truck      649     1021   0.616   0.553   0.595     0.428
+           bus      287      380   0.669   0.494   0.590     0.440
+        person      628     2450   0.753   0.558   0.635     0.328
+  traffic sign     1461     6339   0.721   0.625   0.673     0.364
+
+  Metricas COCO oficiais (pycocotools):
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.414
+   Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.658
+   Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.424
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.176
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.479
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.744
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.235
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.514
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.566
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.369
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.647
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.834
+
+=== Faster R-CNN v2 ===
+        Classe  Imagens  Objetos       P       R   mAP50  mAP50-95
+           all     1764    29823   0.705   0.523   0.577     0.340
+           car     1748    19633   0.819   0.668   0.728     0.427
+         truck      649     1021   0.638   0.460   0.529     0.359
+           bus      287      380   0.670   0.439   0.528     0.381
+        person      628     2450   0.719   0.526   0.557     0.264
+  traffic sign     1461     6339   0.681   0.522   0.544     0.271
+
+  Metricas COCO oficiais (pycocotools):
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.342
+   Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.577
+   Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.343
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.118
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.400
+   Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.687
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.210
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.442
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.474
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.272
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.551
+   Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.786
+
+=== Intervalos de confianca de 95% (bootstrap pareado, 200 sorteios) ===
+       RT-DETR-L  mAP50-95: 0.4461  [0.4349; 0.4564]
+       RT-DETR-L     mAP50: 0.7053  [0.6908; 0.7178]
+         YOLO26m  mAP50-95: 0.4133  [0.4032; 0.4254]
+         YOLO26m     mAP50: 0.6590  [0.6459; 0.6721]
+ Faster R-CNN v2  mAP50-95: 0.3404  [0.3304; 0.3503]
+ Faster R-CNN v2     mAP50: 0.5773  [0.5632; 0.5909]
+
+Diferencas entre modelos (A - B):
+  RT-DETR-L - YOLO26m (mAP50-95): +0.0328  [+0.0269; +0.0384]  -> diferenca robusta
+  RT-DETR-L - YOLO26m (mAP50): +0.0464  [+0.0385; +0.0523]  -> diferenca robusta
+  RT-DETR-L - Faster R-CNN v2 (mAP50-95): +0.1057  [+0.0991; +0.1137]  -> diferenca robusta
+  RT-DETR-L - Faster R-CNN v2 (mAP50): +0.1280  [+0.1205; +0.1393]  -> diferenca robusta
+  YOLO26m - Faster R-CNN v2 (mAP50-95): +0.0729  [+0.0664; +0.0799]  -> diferenca robusta
+  YOLO26m - Faster R-CNN v2 (mAP50): +0.0817  [+0.0735; +0.0938]  -> diferenca robusta
+
+=== Latencia por imagem (lote 1, 200 imagens, conf 0,25, ponta a ponta) ===
+          modelo precisao  media ms  mediana     p95    FPS  pico MiB
+       RT-DETR-L     FP32      38.0     36.0    51.1   26.3       244
+       RT-DETR-L     FP16      38.9     37.9    51.5   25.7       250
+         YOLO26m     FP32      20.1     16.9    34.2   49.7       300
+         YOLO26m     FP16      18.5     17.2    27.6   54.0       332
+ Faster R-CNN v2     FP32      66.8     66.2    74.5   15.0       678
+ Faster R-CNN v2     FP16      51.9     49.9    65.5   19.3       656
+

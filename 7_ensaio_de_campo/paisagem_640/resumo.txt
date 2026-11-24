@@ -1,0 +1,42 @@
+ENSAIO DE CAMPO | classe-alvo: person | IoU >= 0.50 | 1 quadro a cada 3 | recorte: paisagem | imgsz: 640
+Limiares: RT-DETR-L 0.5425, YOLO26m 0.3303, Faster R-CNN v2 0.7918
+Descartados: 5 s iniciais e 0 s finais de cada vídeo (trecho analisado: 10 m 5.0-13.2 s, 20 m 5.0-16.4 s, 30 m 5.0-16.5 s, 35 m 5.0-15.9 s, 40 m 5.0-17.9 s, 45 m 5.0-17.6 s)
+
+   10 m  1080x608  alvo  273.5 px (162.1 px na rede; RT-DETR 287.9 px)  RT-DETR-L: 100%  YOLO26m: 100%  Faster R-CNN v2: 100%
+   20 m  1080x608  alvo  142.1 px ( 84.2 px na rede; RT-DETR 149.5 px)  RT-DETR-L: 100%  YOLO26m: 100%  Faster R-CNN v2: 100%
+   30 m  1080x608  alvo   98.5 px ( 58.3 px na rede; RT-DETR 103.6 px)  RT-DETR-L: 100%  YOLO26m: 100%  Faster R-CNN v2: 100%
+   35 m  1080x608  alvo   85.6 px ( 50.7 px na rede; RT-DETR  90.1 px)  RT-DETR-L: 94%  YOLO26m: 100%  Faster R-CNN v2: 100%
+   40 m  1080x608  alvo   72.0 px ( 42.7 px na rede; RT-DETR  75.8 px)  RT-DETR-L: 32%  YOLO26m: 100%  Faster R-CNN v2: 78%
+   45 m  1080x608  alvo   67.8 px ( 40.2 px na rede; RT-DETR  71.3 px)  RT-DETR-L: 78%  YOLO26m: 94%  Faster R-CNN v2: 15%
+
+Conferência da anotação (altura do alvo deveria cair com 1/distância; desvio > ~8% sugere caixa ou distância imprecisa):
+      10 m: anotada 273.5 px, esperada 273.5 px (+0.0%)
+      20 m: anotada 142.1 px, esperada 136.8 px (+3.9%)
+      30 m: anotada 98.5 px, esperada 91.2 px (+8.0%)
+      35 m: anotada 85.6 px, esperada 78.1 px (+9.5%)
+      40 m: anotada 72.0 px, esperada 68.4 px (+5.3%)
+      45 m: anotada 67.8 px, esperada 60.8 px (+11.6%)
+
+Sensibilidade (ver sensibilidade.csv): taxa principal | limiar do modelo e IoU>=0,30 | conf>=0,25 e IoU>=0,50 | quadros com alguma caixa da classe sobre o alvo (conf>=0,05) e mediana dessa confiança:
+      10 m        RT-DETR-L: 100% | 100% | 100% | 100% (conf mediana 0.911)
+      10 m          YOLO26m: 100% | 100% | 100% | 100% (conf mediana 0.872)
+      10 m  Faster R-CNN v2: 100% | 100% | 100% | 100% (conf mediana 0.999)
+      20 m        RT-DETR-L: 100% | 100% | 100% | 100% (conf mediana 0.905)
+      20 m          YOLO26m: 100% | 100% | 100% | 100% (conf mediana 0.848)
+      20 m  Faster R-CNN v2: 100% | 100% | 100% | 100% (conf mediana 0.989)
+      30 m        RT-DETR-L: 100% | 100% | 100% | 100% (conf mediana 0.808)
+      30 m          YOLO26m: 100% | 100% | 100% | 100% (conf mediana 0.809)
+      30 m  Faster R-CNN v2: 100% | 100% | 100% | 100% (conf mediana 0.977)
+      35 m        RT-DETR-L: 94% | 94% | 99% | 100% (conf mediana 0.733)
+      35 m          YOLO26m: 100% | 100% | 100% | 100% (conf mediana 0.684)
+      35 m  Faster R-CNN v2: 100% | 100% | 100% | 100% (conf mediana 0.975)
+      40 m        RT-DETR-L: 32% | 32% | 100% | 100% (conf mediana 0.506)
+      40 m          YOLO26m: 100% | 100% | 100% | 100% (conf mediana 0.643)
+      40 m  Faster R-CNN v2: 78% | 78% | 98% | 100% (conf mediana 0.954)
+      45 m        RT-DETR-L: 78% | 88% | 90% | 100% (conf mediana 0.648)
+      45 m          YOLO26m: 94% | 94% | 100% | 100% (conf mediana 0.475)
+      45 m  Faster R-CNN v2: 15% | 15% | 61% | 85% (conf mediana 0.5)
+
+Alcance (taxa >= 50%) RT-DETR-L: 45 m
+Alcance (taxa >= 50%) YOLO26m: 45 m
+Alcance (taxa >= 50%) Faster R-CNN v2: 40 m
